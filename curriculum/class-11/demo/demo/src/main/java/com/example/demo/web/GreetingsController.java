@@ -44,7 +44,7 @@ public class GreetingsController {
     @ResponseBody
     @GetMapping("/users/{id}")
     User getUser(@PathVariable Long id) {
-        return userRepository.getById(id);
+        return userRepository.findById(id).orElseThrow();
     }
 
     @ResponseBody
