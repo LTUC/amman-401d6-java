@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Greetings</title>
+    <link th:href="@{/css/styles.css}" rel="stylesheet"/>
+    <script th:src="@{/js/myjs.js}"></script>
+</head>
+<body>
+<h1>Greetings! Class</h1>
+
+<p th:text="'Welcome to your first spring mvc class, ' + ${name} + '!'"></p>
+<p th:text="'Your age is, ' + ${age} + '!'"></p>
+</body>
+</html>
