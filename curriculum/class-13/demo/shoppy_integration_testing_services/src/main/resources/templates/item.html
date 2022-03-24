@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Bug</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div>
+    <form action="/items/update" method="post">
+        <input type="hidden" name="id" th:value="${item.id}" hidden/>
+        <input type="text" name="name" placeholder="Name" th:value="${item.name}"/>
+        <input type="number" name="numberOfLegs" placeholder="Cost" th:value="${item.cost}"/>
+        <select name="cart">
+            <option th:each="cart : ${carts}"
+                    th:text="${cart.name}"
+                    th:value="${cart.id}"
+                    th:selected="${item.cart.id==cart.id}"></option>
+        </select>
+        <button type="submit">Create</button>
+    </form>
+</div>
+</body>
+</html>

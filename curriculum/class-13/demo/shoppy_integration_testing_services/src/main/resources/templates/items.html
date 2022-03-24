@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Items</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div>
+    <div th:each="item : ${items}">
+        <div th:text="${item.id}"></div>
+        <div th:text="${item.name}"></div>
+        <div th:text="${item.cost}"></div>
+    </div>
+
+    <hr/>
+
+    <div th:each="cart : ${carts}">
+        <div th:text="${cart.id}"></div>
+        <div th:text="${cart.name}"></div>
+    </div>
+
+    <form action="/items/create" method="post">
+        <input type="text" name="name" placeholder="Name"/>
+        <input type="number" name="cost" placeholder="Cost"/>
+        <select name="cart">
+            <option th:each="cart : ${carts}"
+                    th:text="${cart.name}"
+                    th:value="${cart.id}"
+                    th:selected="${cart.id}"></option>
+        </select>
+        <button type="submit">Create</button>
+    </form>
+</div>
+</body>
+</html>

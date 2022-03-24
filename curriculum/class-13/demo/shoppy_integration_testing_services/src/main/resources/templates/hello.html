@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello There!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div>
+    <!-- action is the path to our POST action, method = post -->
+    <form action="/hello/posthello" method="post">
+        <!-- boring html inputs! the "name" matches the @RequestParam's on the controller -->
+        <input type="text" name="myname" />
+        <input type="number" name="mynumber" />
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
