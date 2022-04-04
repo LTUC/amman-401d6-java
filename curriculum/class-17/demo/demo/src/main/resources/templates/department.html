@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Departments</title>
+</head>
+<body>
+
+<form th:action="@{/department}" method="post">
+    <div><label for="department">Department : <input id="department" name="department" type="text"></label></div>
+    <input type="submit" value="Add"/>
+</form>
+
+<h1>Departments</h1>
+
+<ul>
+    <li th:each="department:${departments}" th:text="${department.getName()}"></li>
+</ul>
+
+</body>
+</html>

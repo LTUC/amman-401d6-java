@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+</head>
+<body>
+
+<h2>Welcome to <span th:text="${username}"></span> 's profile</h2>
+<p th:text="'My department is :' + ${department}"></p>
+
+<span sec:authentication="principal.authorities">Roles</span>
+
+<div sec:authorize="hasAuthority('ADMIN')">
+    <a href="/delete">Delete Profile </a>
+    <a href="/signup">Create Profile </a>
+</div>
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+</body>
+</html>

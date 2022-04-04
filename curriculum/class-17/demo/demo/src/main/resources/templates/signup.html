@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign Up Page</title>
+    </head>
+    <body>
+        <form method="POST" th:action="@{/signup}">
+            <div><label for="username">Username : <input id="username" name="username" type="text"></label></div>
+            <div><label for="password">Password : <input id="password" name="password" type="text"></label></div>
+            <div><label for="department">Department : <input id="department" name="department" type="number"></label></div>
+            <div><label for="role">Role : <input id="role" name="role" type="number"></label></div>
+            <div><input type="submit" value="Submit"/></div>
+        </form>
+    </body>
+</html>
