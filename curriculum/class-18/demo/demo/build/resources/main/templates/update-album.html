@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+<form action="#"
+      th:action="@{/update/{id}(id=${album.albumId})}"
+      th:object="${album}"
+      method="post">
+    <label for="albumId">Id</label>
+    <input type="number" th:field="*{albumId}" id="albumId" placeholder="Id" readonly>
+
+    <label for="title">Title</label>
+    <input type="text" th:field="*{title}" id="title" placeholder="Title">
+    <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
+
+    <label for="artist">Artist</label>
+    <input type="text" th:field="*{artist}" id="artist" placeholder="Artist">
+    <span th:if="${#fields.hasErrors('artist')}" th:errors="*{artist}"></span>
+
+    <label for="songCount">Song Count</label>
+    <input type="number" th:field="*{songCount}" id="songCount" placeholder="Song Count">
+    <span th:if="${#fields.hasErrors('songCount')}" th:errors="*{songCount}"></span>
+
+    <label for="length">Length</label>
+    <input type="number" th:field="*{length}" id="length" placeholder="Length">
+    <span th:if="${#fields.hasErrors('length')}" th:errors="*{length}"></span>
+
+    <input type="submit" value="Update Album">
+</form>
+</body>
+</html>

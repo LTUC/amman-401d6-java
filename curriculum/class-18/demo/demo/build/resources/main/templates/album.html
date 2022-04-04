@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Album</title>
+</head>
+<body>
+
+<form action="#" method="post" th:action="@{/albums/{id}(id=${album.albumId})}">
+
+    <label for="title">
+        Title:
+        <input id="title" name="title" th:type="text" />
+    </label>
+    <label for="length">
+        Length:
+        <input id="length" name="length" th:type="number" />
+    </label>
+    <label for="trackNumber">
+        Track Number:
+        <input id="trackNumber" name="trackNumber" th:type="number" />
+    </label>
+
+    <button type="submit">Add Song</button>
+</form>
+
+<h3>Album</h3>
+<span th:utext="${album.title}"></span>
+<span th:text="${album.artist}"></span>
+<span th:text="${album.songCount}"></span>
+<span th:text="${album.length}"></span>
+
+<h3>Songs</h3>
+<div th:if="${ not#lists.isEmpty(songs) }">
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Length</th>
+            <th>Track</th>
+        </tr>
+        <tr th:each="song : ${songs}">
+            <td th:text="${song.songId}"></td>
+            <td th:text="${song.title}"></td>
+            <td th:text="${song.length}"></td>
+            <td th:text="${song.trackNumber}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

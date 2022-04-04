@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Albums</title>
+</head>
+<body>
+
+<form method="post" th:action="@{/albums}">
+
+    <label for="title">
+        Title:
+        <input id="title" name="title" th:type="text" />
+    </label>
+    <label for="artist">
+        Artist:
+        <input id="artist" name="artist" th:type="text" />
+    </label>
+    <label for="songCount">
+        Song Count:
+        <input id="songCount" name="songCount" th:type="number" />
+    </label>
+    <label for="length">
+        Length:
+        <input id="length" name="length" th:type="number" />
+    </label>
+
+    <button type="submit">Create Album</button>
+</form>
+
+<p>
+    <span>List of Albums</span>
+</p>
+<div th:switch="${albums}">
+    <h2 th:case="null">No albums yet!</h2>
+    <div th:case="*">
+        <h2>Albums</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Song Count</th>
+                <th>Length</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="album : ${albums}">
+                <td th:text="${album.title}"></td>
+                <td th:text="${album.artist}"></td>
+                <td th:text="${album.songCount}"></td>
+                <td th:text="${album.length}"></td>
+                <td><a th:href="@{/edit/{id}(id=${album.albumId})}">Edit</a></td>
+                <td><a th:href="@{/delete/{id}(id=${album.albumId})}">Delete</a></td>
+                <td><a th:href="@{/view/{id}(id=${album.albumId})}">View</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><a href="/albums">Add a new album</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+
+<form method="post" th:action="@{/users}">
+
+    <label for="name">
+        Name:
+        <input id="name" name="name" th:type="text" />
+    </label>
+
+    <button type="submit">Create User</button>
+</form>
+
+<p>
+    <span>List of Users</span>
+</p>
+<div th:switch="${users}">
+    <h2 th:case="null">No users yet!</h2>
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    <div th:case="*">
+        <h2>Users</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="user : ${users}">
+<!--                <td th:utext="${user.name}"></td>--> <!-- this is unsanitized thymeleaf text -->
+                <td th:text="${user.name}"></td> <!-- sanitized thymeleaf text -->
+                <td><a th:href="@{/follow/{id}(id=${user.id})}">Follow</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
