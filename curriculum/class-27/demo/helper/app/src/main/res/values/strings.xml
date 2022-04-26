@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">helper</string>
+    <string name="hint_enter_address">Enter Address</string>
+    <string name="lbl_submit">Submit</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_copyright">Copyright</string>
+    <string name="weather">Its Sunny</string>
+    <string name="prompt_please_set_address">Please Set Address in Settings</string>
+
+    <string-array name="cities">
+        <item>Amman</item>
+        <item>Cairo</item>
+        <item>Zarqa</item>
+        <item>Bridgetown</item>
+        <item>Irbid</item>
+    </string-array>
+</resources>
