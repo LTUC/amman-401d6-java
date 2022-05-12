@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="static_loaded_fragment">This is statically loaded</string>
+    <string name="dynamic_loaded_fragment">This is dynamically loaded</string>
+</resources>
