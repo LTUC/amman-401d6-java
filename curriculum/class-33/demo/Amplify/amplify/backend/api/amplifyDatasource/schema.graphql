@@ -1,0 +1,13 @@
+input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type Task @model {
+  id: ID!
+  title: String!
+  description: String
+  status: String
+  notes: [Note] @hasMany
+}
+type Note @model {
+  id: ID!
+  content: String!
+}
