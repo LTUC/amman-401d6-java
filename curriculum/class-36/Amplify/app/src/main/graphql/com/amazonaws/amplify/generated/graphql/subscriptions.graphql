@@ -1,0 +1,118 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateTask {
+  onCreateTask {
+    id
+    title
+    description
+    status
+    notes {
+      items {
+        id
+        content
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        taskNotesId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateTask {
+  onUpdateTask {
+    id
+    title
+    description
+    status
+    notes {
+      items {
+        id
+        content
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        taskNotesId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteTask {
+  onDeleteTask {
+    id
+    title
+    description
+    status
+    notes {
+      items {
+        id
+        content
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        taskNotesId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateNote {
+  onCreateNote {
+    id
+    content
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    taskNotesId
+  }
+}
+subscription OnUpdateNote {
+  onUpdateNote {
+    id
+    content
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    taskNotesId
+  }
+}
+subscription OnDeleteNote {
+  onDeleteNote {
+    id
+    content
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    taskNotesId
+  }
+}
