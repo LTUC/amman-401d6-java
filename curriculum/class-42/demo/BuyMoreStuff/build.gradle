@@ -1,0 +1,21 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+  dependencies {
+    classpath 'com.android.tools.build:gradle:4.1.2'
+
+    // Add this line into `dependencies` in `buildscript`
+    classpath 'com.amplifyframework:amplify-tools-gradle-plugin:1.0.2'
+  }
+}
+
+plugins {
+    id 'com.android.application' version '7.1.2' apply false
+    id 'com.android.library' version '7.1.2' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// Add this line at the end of the file
+apply plugin: 'com.amplifyframework.amplifytools'

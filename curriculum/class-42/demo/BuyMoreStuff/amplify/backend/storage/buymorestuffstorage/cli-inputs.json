@@ -1,0 +1,17 @@
+{
+  "resourceName": "buymorestuffstorage",
+  "policyUUID": "c1ec4c5c",
+  "bucketName": "demoe940f6752648422bab017efdc7ff3c49",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "groupAccess": {}
+}

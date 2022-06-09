@@ -1,0 +1,151 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateProduct {
+  onCreateProduct {
+    id
+    name
+    description
+    dateCreated
+    productCategory
+    productImageS3Key
+    productLatitude
+    productLongitude
+    contactId
+    contactPerson {
+      id
+      email
+      fullName
+      products {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateProduct {
+  onUpdateProduct {
+    id
+    name
+    description
+    dateCreated
+    productCategory
+    productImageS3Key
+    productLatitude
+    productLongitude
+    contactId
+    contactPerson {
+      id
+      email
+      fullName
+      products {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteProduct {
+  onDeleteProduct {
+    id
+    name
+    description
+    dateCreated
+    productCategory
+    productImageS3Key
+    productLatitude
+    productLongitude
+    contactId
+    contactPerson {
+      id
+      email
+      fullName
+      products {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateContact {
+  onCreateContact {
+    id
+    email
+    fullName
+    products {
+      items {
+        id
+        name
+        description
+        dateCreated
+        productCategory
+        productImageS3Key
+        productLatitude
+        productLongitude
+        contactId
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateContact {
+  onUpdateContact {
+    id
+    email
+    fullName
+    products {
+      items {
+        id
+        name
+        description
+        dateCreated
+        productCategory
+        productImageS3Key
+        productLatitude
+        productLongitude
+        contactId
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteContact {
+  onDeleteContact {
+    id
+    email
+    fullName
+    products {
+      items {
+        id
+        name
+        description
+        dateCreated
+        productCategory
+        productImageS3Key
+        productLatitude
+        productLongitude
+        contactId
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}

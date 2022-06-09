@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/productListConstraintLayout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#FFFFFF"
+  tools:context=".activity.ProductListActivity">
+
+  <ImageView
+    android:id="@+id/userSettingsImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:contentDescription="@string/settings_icon"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@android:drawable/ic_menu_manage"
+    tools:ignore="ImageContrastCheck" />
+
+  <TextView
+    android:id="@+id/productListNicknameTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="Nickname: nickname here" />
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/productListRecyclerView"
+    android:layout_width="318dp"
+    android:layout_height="136dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="32dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/addProductButton" />
+
+  <Button
+    android:id="@+id/addProductButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="26dp"
+    android:text="@string/add_product"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/productListNicknameTextView" />
+
+  <Button
+    android:id="@+id/productListLoginButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginBottom="8dp"
+    android:text="@string/log_in"
+    app:layout_constraintBottom_toTopOf="@+id/bannerAdView"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    android:id="@+id/productListLogoutButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    android:text="@string/log_out"
+    app:layout_constraintBottom_toTopOf="@+id/bannerAdView"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+  <com.google.android.gms.ads.AdView
+    android:id="@+id/bannerAdView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="4dp"
+    app:adSize="BANNER"
+    app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.494"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+  <Button
+    android:id="@+id/interstitialAdButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginBottom="48dp"
+    android:text="@string/interstitial_ad"
+    app:layout_constraintBottom_toTopOf="@+id/productListLoginButton"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    android:id="@+id/rewardedAdButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="48dp"
+    android:text="@string/rewarded_ad"
+    app:layout_constraintBottom_toTopOf="@+id/productListLogoutButton"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
