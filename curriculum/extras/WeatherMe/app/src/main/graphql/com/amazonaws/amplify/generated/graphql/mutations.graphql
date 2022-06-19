@@ -1,0 +1,352 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  createUser(input: $input, condition: $condition) {
+    id
+    cognitoId
+    email
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  updateUser(input: $input, condition: $condition) {
+    id
+    cognitoId
+    email
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
+) {
+  deleteUser(input: $input, condition: $condition) {
+    id
+    cognitoId
+    email
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateSuggestion(
+  $input: CreateSuggestionInput!
+  $condition: ModelSuggestionConditionInput
+) {
+  createSuggestion(input: $input, condition: $condition) {
+    id
+    name
+    desc
+    timestamp
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    userSuggestionsId
+    categorySuggestionsId
+    weatherSuggestionsId
+  }
+}
+mutation UpdateSuggestion(
+  $input: UpdateSuggestionInput!
+  $condition: ModelSuggestionConditionInput
+) {
+  updateSuggestion(input: $input, condition: $condition) {
+    id
+    name
+    desc
+    timestamp
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    userSuggestionsId
+    categorySuggestionsId
+    weatherSuggestionsId
+  }
+}
+mutation DeleteSuggestion(
+  $input: DeleteSuggestionInput!
+  $condition: ModelSuggestionConditionInput
+) {
+  deleteSuggestion(input: $input, condition: $condition) {
+    id
+    name
+    desc
+    timestamp
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    userSuggestionsId
+    categorySuggestionsId
+    weatherSuggestionsId
+  }
+}
+mutation CreateCategory(
+  $input: CreateCategoryInput!
+  $condition: ModelCategoryConditionInput
+) {
+  createCategory(input: $input, condition: $condition) {
+    id
+    title
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateCategory(
+  $input: UpdateCategoryInput!
+  $condition: ModelCategoryConditionInput
+) {
+  updateCategory(input: $input, condition: $condition) {
+    id
+    title
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteCategory(
+  $input: DeleteCategoryInput!
+  $condition: ModelCategoryConditionInput
+) {
+  deleteCategory(input: $input, condition: $condition) {
+    id
+    title
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateWeather(
+  $input: CreateWeatherInput!
+  $condition: ModelWeatherConditionInput
+) {
+  createWeather(input: $input, condition: $condition) {
+    id
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateWeather(
+  $input: UpdateWeatherInput!
+  $condition: ModelWeatherConditionInput
+) {
+  updateWeather(input: $input, condition: $condition) {
+    id
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteWeather(
+  $input: DeleteWeatherInput!
+  $condition: ModelWeatherConditionInput
+) {
+  deleteWeather(input: $input, condition: $condition) {
+    id
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}

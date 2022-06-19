@@ -1,0 +1,320 @@
+# this is an auto generated file. This will be overwritten
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    cognitoId
+    email
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      cognitoId
+      email
+      name
+      suggestions {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncUsers(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      cognitoId
+      email
+      name
+      suggestions {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetSuggestion($id: ID!) {
+  getSuggestion(id: $id) {
+    id
+    name
+    desc
+    timestamp
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    userSuggestionsId
+    categorySuggestionsId
+    weatherSuggestionsId
+  }
+}
+query ListSuggestions(
+  $filter: ModelSuggestionFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listSuggestions(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      desc
+      timestamp
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      userSuggestionsId
+      categorySuggestionsId
+      weatherSuggestionsId
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncSuggestions(
+  $filter: ModelSuggestionFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncSuggestions(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      name
+      desc
+      timestamp
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      userSuggestionsId
+      categorySuggestionsId
+      weatherSuggestionsId
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetCategory($id: ID!) {
+  getCategory(id: $id) {
+    id
+    title
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListCategories(
+  $filter: ModelCategoryFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCategories(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      title
+      suggestions {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncCategories(
+  $filter: ModelCategoryFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncCategories(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      title
+      suggestions {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetWeather($id: ID!) {
+  getWeather(id: $id) {
+    id
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListWeathers(
+  $filter: ModelWeatherFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listWeathers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      suggestions {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncWeathers(
+  $filter: ModelWeatherFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncWeathers(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      name
+      suggestions {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}

@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="pd_img_logo_height">70dp</dimen>
+    <dimen name="pd_img_logo_width">70dp</dimen>
+    <dimen name="pd_img_logo_marginTop">50dp</dimen>
+    <dimen name="pd_txt_ip_email_marginTop">35dp</dimen>
+    <dimen name="pd_txt_acnt_description">220dp</dimen>
+    <dimen name="pd_layout_marginTop">16dp</dimen>
+    <dimen name="pd_layout_marginStart">16dp</dimen>
+    <dimen name="pd_layout_marginEnd">16dp</dimen>
+    <dimen name="pd_layout_marginBottom">16dp</dimen>
+    <dimen name="pd_code_spinner_width">100dp</dimen>
+    <dimen name="pd_ph_no_marginStart">30dp</dimen>
+    <dimen name="pd_boxCornerRadiusTopStart">8dp</dimen>
+    <dimen name="pd_boxCornerRadiusBottomEnd">8dp</dimen>
+    <dimen name="pd_boxCornerRadiusBottomStart">8dp</dimen>
+    <dimen name="pd_boxCornerRadiusTopEnd">8dp</dimen>
+    <dimen name="pd_padding">5dp</dimen>
+    <dimen name="pd_padding_regular">8dp</dimen>
+    <dimen name="pd_btn_layout_height">40dp</dimen>
+    <dimen name="pd_v_1_width">100dp</dimen>
+    <dimen name="pd_v_1_height">1dp</dimen>
+    <dimen name="pd_layout_apple_sign_in_height">40dp</dimen>
+    <dimen name="pd_font_size_nano">10sp</dimen>
+    <dimen name="pd_font_size_micro">12sp</dimen>
+    <dimen name="pd_font_size_small">14sp</dimen>
+    <dimen name="pd_font_size_medium">16sp</dimen>
+    <dimen name="pd_font_size_normal">18sp</dimen>
+    <dimen name="pd_font_size_large">20sp</dimen>
+    <dimen name="pd_font_size_xlarge">22sp</dimen>
+    <dimen name="pd_font_size_xxlarge">26sp</dimen>
+    <dimen name="pd_font_size_xxxlarge">30sp</dimen>
+    <dimen name="pd_font_size_xxxlarge2">34sp</dimen>
+    <dimen name="pd_font_size_splash">40sp</dimen>
+    <dimen name="pd_spacing_control_half">2dp</dimen>
+    <dimen name="pd_spacing_control">4dp</dimen>
+    <dimen name="pd_spacing_standard">8dp</dimen>
+    <dimen name="pd_spacing_standard_new">16dp</dimen>
+    <dimen name="pd_spacing_large">24dp</dimen>
+    <dimen name="pd_spacing_xlarge">32dp</dimen>
+    <dimen name="pd_spacing_xxlarge">40dp</dimen>
+    <dimen name="pd_spacing_standard_medium">12dp</dimen>
+    <dimen name="pd_padding_final">12dp</dimen>
+    <dimen name="pd_corner_bottomLeftRadius">8dp</dimen>
+    <dimen name="pd_corner_bottomRightRadius">8dp</dimen>
+    <dimen name="pd_corner_topLeftRadius">8dp</dimen>
+    <dimen name="pd_corner_topRightRadius">8dp</dimen>
+    <dimen name="pd_edt_txt_otp_height">40dp</dimen>
+    <dimen name="pd_edt_txt_otp_width">40dp</dimen>
+    <dimen name="pd_navigation_view_height">56dp</dimen>
+</resources>

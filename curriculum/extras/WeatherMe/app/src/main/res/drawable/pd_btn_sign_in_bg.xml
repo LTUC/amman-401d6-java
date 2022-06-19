@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/pd_btn_signin" />
+    <corners
+        android:bottomLeftRadius="@dimen/pd_corner_topLeftRadius"
+        android:bottomRightRadius="@dimen/pd_corner_topRightRadius"
+        android:topLeftRadius="@dimen/pd_corner_bottomLeftRadius"
+        android:topRightRadius="@dimen/pd_corner_bottomRightRadius" />
+    <size android:height="10dp"/>
+</shape>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="pd_colorPrimary">#316FFE</color>
+    <color name="pd_colorPrimaryDark">#00574B</color>
+    <color name="pd_colorAccent">#316FFE</color>
+    <color name="pd_color_doc">#316FFE</color>
+    <color name="pd_color_black">#000</color>
+    <color name="pd_ic_txtip_bg">#B5CAF2</color>
+    <color name="pd_btn_signin">#FF03DAC5</color>
+    <color name="pd_color_white">#FFFFFF</color>
+    <color name="pd_view">#F5F5F5</color>
+    <color name="pd_forgot_pass">#B5CAF2</color>
+    <color name="pd_bg_zip_code">#F3F3F3</color>
+    <color name="pd_txt_zip_code">#B6BDBF</color>
+    <color name="pd_home_bg">#F4F9FF</color>
+    <color name="pd_view_pager_1">#19CFEC</color>
+    <color name="pd_view_pager_2">#03A7CA</color>
+    <color name="pd_view_line">#E4E4E4</color>
+    <color name="pd_transparent">#00000000</color>
+    <color name="pd_tab_layout_bg">#E9EEF4</color>
+    <color name="pd_btn_card_bg">#EAF0FF</color>
+    <color name="pd_switch_track">#25BA4D</color>
+    <color name="pd_txt_transparrent_bg">#DC03A7CA</color>
+    <color name="pd_txt_therapist_details">#C1EDF4</color>
+    <color name="pd_txt_edit_profile">#25BA4D</color>
+    <color name="pd_btn_txt_facebook">#4C6EB3</color>
+    <color name="pd_btn_facebook_bg">#ECEFF8</color>
+    <color name="pd_btn_insta_bg">#FAE9F1</color>
+    <color name="pd_btn_txt_insta">#DA639A</color>
+    <color name="pd_btn_waza_bg">#E4F5FC</color>
+    <color name="pd_btn_txt_waze">#6DC2DB</color>
+    <color name="pd_textcolorprimary">#333333</color>
+    <color name="pd_textColorSecondary">#747474</color>
+    <color name="pd_card_bg">#10BEDD</color>
+</resources>

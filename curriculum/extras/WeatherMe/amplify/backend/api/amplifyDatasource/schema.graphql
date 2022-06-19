@@ -1,0 +1,28 @@
+input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type User @model {
+  id: ID!
+  cognitoId: String!
+  email: String
+  name: String
+  suggestions: [Suggestion] @hasMany
+}
+
+type Suggestion @model {
+  id: ID!
+  name: String!
+  desc: String!
+  timestamp: String!
+}
+
+type Category @model {
+  id: ID!
+  title: String!
+  suggestions: [Suggestion] @hasMany
+}
+
+type Weather @model {
+  id: ID!
+  name: String!
+  suggestions: [Suggestion] @hasMany
+}

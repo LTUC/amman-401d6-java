@@ -1,0 +1,316 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    cognitoId
+    email
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    cognitoId
+    email
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    cognitoId
+    email
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateSuggestion {
+  onCreateSuggestion {
+    id
+    name
+    desc
+    timestamp
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    userSuggestionsId
+    categorySuggestionsId
+    weatherSuggestionsId
+  }
+}
+subscription OnUpdateSuggestion {
+  onUpdateSuggestion {
+    id
+    name
+    desc
+    timestamp
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    userSuggestionsId
+    categorySuggestionsId
+    weatherSuggestionsId
+  }
+}
+subscription OnDeleteSuggestion {
+  onDeleteSuggestion {
+    id
+    name
+    desc
+    timestamp
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    userSuggestionsId
+    categorySuggestionsId
+    weatherSuggestionsId
+  }
+}
+subscription OnCreateCategory {
+  onCreateCategory {
+    id
+    title
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateCategory {
+  onUpdateCategory {
+    id
+    title
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteCategory {
+  onDeleteCategory {
+    id
+    title
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateWeather {
+  onCreateWeather {
+    id
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateWeather {
+  onUpdateWeather {
+    id
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteWeather {
+  onDeleteWeather {
+    id
+    name
+    suggestions {
+      items {
+        id
+        name
+        desc
+        timestamp
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userSuggestionsId
+        categorySuggestionsId
+        weatherSuggestionsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}

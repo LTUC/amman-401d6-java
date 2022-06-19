@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3269a737f",
+  "policyUUID": "269a737f",
+  "bucketName": "weatherme874cbc2cb03846d8b41351996f165b48",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

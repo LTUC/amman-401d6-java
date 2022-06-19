@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/pd_btn_sign_in_bg.xml" value="0.281" />
+        <entry key="app/src/main/res/drawable/pd_btn_sign_in_bg.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_ads.xml" value="0.2504528985507246" />
+        <entry key="app/src/main/res/layout/activity_geo.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/activity_log_weather.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/activity_verification.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/activity_weather_details.xml" value="0.3028095733610822" />
+        <entry key="app/src/main/res/layout/day_forecast.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/fragment_geo_maps.xml" value="0.2111111111111111" />
+        <entry key="app/src/main/res/layout/fragment_google_maps.xml" value="0.30319148936170215" />
+        <entry key="app/src/main/res/layout/test.xml" value="0.3484375" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.3494791666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
